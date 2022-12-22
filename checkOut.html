@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="content">
+        <h1>
+            <a href="index.html">SHOP</a>
+        </h1>
+    </header>
+    <div class="checkOut">
+        <p>Checkout</p>
+        <p>Shop is a demo app - form data will not be sent</p>
+    </div>
+    <div class="cartBill">
+        <div class="form">
+            <form class="form-info ">
+                <h3>Account Information</h3>
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Phone Number" />
+            </form>
+            <div class="form-info ">
+                <h3>Shipping address</h3>
+                <input type="text" placeholder="Addres" />
+                <input type="text" placeholder="city" />
+                <div class="sub">
+                    <input type="text" placeholder="State/Province" />
+                    <input type="text" placeholder="Zip/Post Code" />
+                </div>
+            </div>
+            <div class="form-info ">
+                <h3>Country</h3>
+                <select name="Quantity" id="Quantity">
+                    <option value="USA">USA</option>
+                    <option value="FRANCE">FRANCE</option>
+                    <option value="INDIA" selected>INDIA</option>
+                    <option value="UAE">UAE</option>
+                    <option value="CHINA">CHINA</option>
+                </select>  
+            </div>
+            <div class="getInfo">
+                <h3>Billing</h3>
+                <input type="checkbox" id="billing" name="billing"/><span>Use a diffrent billing address</span>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-info ">
+                <h3>Payment Method</h3>
+                <input type="text" placeholder="Cardholder name" />
+                <input type="text" placeholder="Card number" />
+            </div>
+            <div class=" ">
+                <h3>Expiry</h3>
+                <div class="expiry">
+                    <select name="month" id="month" class="month">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="may">may</option>
+                    </select>
+                    <select name="year" id="year" class="month">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <input type="text" placeholder="CVV" class="month"/>
+                </div>
+            </div>
+            <div class="shippingDiv ">
+                <h3>Shipping address</h3>
+                <div class="shipItem">
+                    <p>Anvil L/S Crew Neck - Grey</p>
+                    <p>$44.30</p>
+                </div>
+                <div class="shipItem">
+                    <p>Total</p>
+                    <p>$44.30</p>
+                </div>
+            </div>
+            <button>add to cart</button>
+        </div>
+    </div>
+    <footer class="content">
+        <p>made by Ikram</p>
+        <a></a><button class="shopNowBtn">Demo Only</button>
+    </footer>
+</body>
+</html>

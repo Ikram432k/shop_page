@@ -1,0 +1,267 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    padding: 20px;
+}
+nav{
+    display:flex;
+}
+nav a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px; 
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+} 
+nav a:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+/* main_content - home page*/
+
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.subOption{
+    display: flex;
+}
+.subOption img{
+    height: 250px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.optionTitle{
+    margin: 25px 0;
+    font-size: 17px;
+}
+button{
+    cursor: pointer;
+    text-transform: uppercase;
+    border:1px solid black;
+    color:black;
+    margin-top:5px;
+    background-color:rgb(255, 255, 255);
+    padding:8px 10px;
+    font-size:15px;
+}
+.shopNowBtn{
+    padding: 10px 40px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    margin: 20px 0;
+}
+footer button{
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+footer button:hover{
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0); 
+}
+
+/*-----shop now page-----*/
+
+.cointainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.viewProduct{
+    padding-top:  80px;
+    display: flex;
+    justify-content: space-around;
+}
+.spec{
+    padding: 50px;
+}
+.viewProduct img{
+    height: 100%;
+    width: 100%;
+    margin: 0 20px;
+}
+.spec h2,p{
+    margin: 20px 0;
+}
+@media only screen and (max-width:800px){
+    .viewProduct{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+/*---viewproduct---*/
+
+.optionDiv{
+    margin: 20px 0;
+}
+.featureLi{
+    margin: 15px 0;
+}
+.featureLi  li{
+    margin-left: 25px;
+}
+.Quantity,.size{
+    padding: 15px;
+    flex: 3;
+}
+select{
+    border: none;
+}
+
+
+/*----cart----*/
+
+.cartHead{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.cartMain{
+    display:flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.item img{
+    width: 70px;
+}
+.itemInfo1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+.itemInfo2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.itemInfo p{
+    margin: 20px 0;
+}
+.cartTotal{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.cartTotal p{
+    margin:  10px 0;
+    min-width: 70px;
+    width: 100px;
+}
+.cartTotal button{
+    border: 2px solid black;
+    padding: 10px 40px;
+    margin-right: 25px ;
+}
+.info{
+    display: inherit;
+    width: 100px;
+    min-width: 70px;
+    justify-content: space-around;
+}
+.info option{
+    padding: 15px;
+}
+@media only screen and (max-width:800px){
+    .item{
+        flex-direction: column;
+    }
+}
+/*---checkout---*/
+
+.checkOut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.checkOut p{
+    margin: 0;
+}
+.cartBill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+}
+.shipItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-info h3{
+    margin: 15px 0;
+}  
+.expiry{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}  
+.month{
+    width: 33%;
+}
+.sub {
+    display: flex;
+    gap: 25px;
+}
+.getInfo h3{
+    margin: 20px 0;
+}
+.getInfo span{
+    margin: 5px;
+}
